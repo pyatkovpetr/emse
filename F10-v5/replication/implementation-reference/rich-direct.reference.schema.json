@@ -1,0 +1,160 @@
+{
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": [
+        "completed",
+        "partial",
+        "blocked"
+      ]
+    },
+    "reason": {
+      "type": "string",
+      "description": "Short machine-readable reason, e.g. criteria_met, blocked, stalled, provider_failed."
+    },
+    "outcome": {
+      "type": "string",
+      "description": "Caller-owned outcome code. Preserve the exact value required by the task adapter."
+    },
+    "summary": {
+      "type": "string",
+      "description": "Concise outcome in the user's language."
+    },
+    "response": {
+      "type": "string",
+      "description": "Exact user-facing answer or requested payload. For SQL this is the result rows as a markdown table, not a profile_id or evidence UUID. Never replace the payload with a link to the result."
+    },
+    "refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Optional http(s) URLs or workspace file paths. Do not put profile_id, evidence IDs, or opaque UUIDs here."
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Host-issued evidence IDs selected for the terminal result. Orion derives refs from these receipts."
+    },
+    "criteria": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Stable short criterion identifier."
+          },
+          "title": {
+            "type": "string",
+            "description": "Concrete acceptance criterion."
+          },
+          "state": {
+            "type": "string",
+            "enum": [
+              "met",
+              "unmet"
+            ]
+          },
+          "evidence": {
+            "type": "string",
+            "description": "Short human-readable explanation. This text is not trusted as proof."
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Host-issued evidence IDs from successful tool results, for example ev_018. Do not invent IDs."
+          }
+        },
+        "required": [
+          "title",
+          "state",
+          "evidence",
+          "evidence_refs"
+        ],
+        "additionalProperties": false
+      },
+      "description": "Acceptance criteria and evidence."
+    },
+    "changed_files": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "verification": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unverified_boundaries": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "git_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "description": "file, report, url, issue, or pull_request"
+          },
+          "path": {
+            "type": "string",
+            "description": "Repository-relative file path."
+          },
+          "url": {
+            "type": "string",
+            "description": "External URL."
+          },
+          "title": {
+            "type": "string",
+            "description": "Display title."
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "remaining_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "recommendations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "status",
+    "summary",
+    "criteria",
+    "evidence_refs",
+    "response"
+  ],
+  "additionalProperties": false
+}

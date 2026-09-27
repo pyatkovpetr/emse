@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": [
+        "completed",
+        "partial",
+        "blocked"
+      ]
+    },
+    "response": {
+      "type": "string",
+      "description": "Exact user-facing factual answer. Preserve spelling, punctuation, numbers, versions, dates, names, units, and whitespace; Orion performs no semantic repair."
+    }
+  },
+  "required": [
+    "status",
+    "response"
+  ],
+  "additionalProperties": false
+}

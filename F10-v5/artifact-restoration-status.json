@@ -1,0 +1,109 @@
+{
+  "study_id": "F10-EMSE-CLEAN-V5-2026-09-25",
+  "restoration_date": "2026-09-27",
+  "provider_calls": 0,
+  "frozen_artifacts_modified": false,
+  "verification": [
+    {
+      "path": "runner/provider.py",
+      "expected_sha256": "95abe342cde96c54a208fdd43bd3345cc77b3cf242453dd2cc5e34b751d1cd15",
+      "actual_sha256": "95abe342cde96c54a208fdd43bd3345cc77b3cf242453dd2cc5e34b751d1cd15",
+      "status": "VERIFIED",
+      "provenance": "Original server artifact recovered; exact frozen SHA verified"
+    },
+    {
+      "path": "runner/screen.py",
+      "expected_sha256": "748cad3e888f1f7e2d9eafd2aa2173182d42dcb7e003d33c8b19fd98ea542623",
+      "actual_sha256": "748cad3e888f1f7e2d9eafd2aa2173182d42dcb7e003d33c8b19fd98ea542623",
+      "status": "VERIFIED",
+      "provenance": "Original server artifact recovered; exact frozen SHA verified"
+    },
+    {
+      "path": "runner/cases.py",
+      "expected_sha256": "941aea9f42446219423333497e4473e6f6cc26488deb10ad41c7b5cdb86de25f",
+      "actual_sha256": "941aea9f42446219423333497e4473e6f6cc26488deb10ad41c7b5cdb86de25f",
+      "status": "VERIFIED",
+      "provenance": "Original server artifact recovered; exact frozen SHA verified"
+    },
+    {
+      "path": "runner/qa_clean.py",
+      "expected_sha256": "1399f14e1e3ae6ed3e697a867524250c13e0b59c5dd2277f5dd14127e7dd0070",
+      "actual_sha256": "1399f14e1e3ae6ed3e697a867524250c13e0b59c5dd2277f5dd14127e7dd0070",
+      "status": "VERIFIED",
+      "provenance": "Original server artifact recovered; exact frozen SHA verified"
+    },
+    {
+      "path": "runner/run_model.py",
+      "expected_sha256": "320461c04a121c28bc7bb1fd5bb759bc4c15192894a3514024de8cb8d895bab8",
+      "actual_sha256": "320461c04a121c28bc7bb1fd5bb759bc4c15192894a3514024de8cb8d895bab8",
+      "status": "VERIFIED",
+      "provenance": "Original server artifact recovered; exact frozen SHA verified"
+    },
+    {
+      "path": "runner/launch_four.py",
+      "expected_sha256": "e56d47c7febe83c8c55bfb1c5e76190200cbf492a3c3d53b06eefd15093842cc",
+      "actual_sha256": "e56d47c7febe83c8c55bfb1c5e76190200cbf492a3c3d53b06eefd15093842cc",
+      "status": "VERIFIED",
+      "provenance": "Original server artifact recovered; exact frozen SHA verified"
+    },
+    {
+      "path": "runner/analyze.py",
+      "expected_sha256": "3badf130dd163572d74ade121e56f550a6f632a967830a27ca38bdad862e4eed",
+      "actual_sha256": "3badf130dd163572d74ade121e56f550a6f632a967830a27ca38bdad862e4eed",
+      "status": "VERIFIED",
+      "provenance": "Original server artifact recovered; exact frozen SHA verified"
+    },
+    {
+      "path": "campaign-protocol.json",
+      "expected_sha256": "3128f026c139b7143871f2831e03479a590b8beceecbb48849d07c7f47e43976",
+      "actual_sha256": "3128f026c139b7143871f2831e03479a590b8beceecbb48849d07c7f47e43976",
+      "status": "VERIFIED",
+      "provenance": "Original server artifact recovered; exact frozen SHA verified"
+    },
+    {
+      "path": "frozen/freeze-audit.json",
+      "expected_sha256": "bcfdfd4e2346d0f98546e500a919dd7e0ca603afb01e4ef0cc554c11f2c01d60",
+      "actual_sha256": "bcfdfd4e2346d0f98546e500a919dd7e0ca603afb01e4ef0cc554c11f2c01d60",
+      "status": "VERIFIED",
+      "provenance": "Original server artifact recovered; exact frozen SHA verified"
+    },
+    {
+      "path": "frozen/tasks.jsonl",
+      "expected_sha256": "8c3e5785345373dca9cb0e03e7a0d2336b9b903b40b8b3952c3130c3557469ff",
+      "actual_sha256": "8c3e5785345373dca9cb0e03e7a0d2336b9b903b40b8b3952c3130c3557469ff",
+      "status": "VERIFIED",
+      "provenance": "Original server artifact recovered; exact frozen SHA verified"
+    },
+    {
+      "path": "frozen/answers.jsonl",
+      "expected_sha256": "b4bd14d9888b6bad1dc5e6f70313f39035534e7784902a80e0778f3d26682047",
+      "actual_sha256": "b4bd14d9888b6bad1dc5e6f70313f39035534e7784902a80e0778f3d26682047",
+      "status": "VERIFIED",
+      "provenance": "Original server artifact recovered; exact frozen SHA verified"
+    },
+    {
+      "path": "frozen/excluded-task-ids.jsonl",
+      "expected_sha256": "d87b8f17d2168dedc4a1ec3144447650d12708640ff797f918f3c1e088558455",
+      "actual_sha256": "d87b8f17d2168dedc4a1ec3144447650d12708640ff797f918f3c1e088558455",
+      "status": "VERIFIED",
+      "provenance": "Original server artifact recovered; exact frozen SHA verified"
+    },
+    {
+      "path": "bin/orion-frozen",
+      "expected_sha256": "2376fb27db0f6ec5543bcdeeb8d2e01d7943dabb994396d63089c7a03f1487cb",
+      "actual_sha256": "2376fb27db0f6ec5543bcdeeb8d2e01d7943dabb994396d63089c7a03f1487cb",
+      "status": "VERIFIED",
+      "provenance": "Original server artifact recovered; exact frozen SHA verified"
+    }
+  ],
+  "raw_receipts_status": "RECOVERED_AND_ALL_REQUESTS_AUDITED",
+  "original_binary_build_commit_status": "EXACT_BINARY_RECOVERED_EMBEDDED_BASE_COMMIT_AND_TOOLCHAIN_KNOWN_DIRTY_TREE_NOT_RECOVERED",
+  "full_execution_reproducibility": "EXACT_EXECUTABLE_AND_RUN_RECORDS_AVAILABLE_PROVIDER_FUTURE_OUTPUTS_NOT_GUARANTEED",
+  "analysis_from_saved_per_task_results": "AVAILABLE",
+  "analysis_from_primary_records": "REPRODUCED_EXACTLY",
+  "build_from_source_reproducibility": "MODIFIED_BUILD_TREE_NOT_RECOVERED",
+  "windows_verified": 4800,
+  "forwarded_requests_verified": 6441,
+  "route_mismatches": 0,
+  "signing_secrets_omitted_from_submission": true
+}

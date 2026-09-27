@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.key
+*.lock
+F10-v5/replication/sources/mmlu-data.tar
+F10-v5/replication/f10-clean-v5/runs/
+F10-v5/replication/f10-clean-v5/qualification/
+F10-v5/replication/primary-reproduced/
+F10-v5/replication/primary-audit-local-verification/

@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this frozen research artifact alongside the manuscript."
+type: software
+title: "F10 v5 research package for Source Conditioned Completion Contracts in an LLM Agent Harness"
+version: "f10-v5-artifact-r1"
+date-released: 2026-09-27
+authors:
+  - family-names: "Piatkov"
+    given-names: "Petr A."
+    orcid: "https://orcid.org/0009-0003-0423-6467"
+repository-code: "https://github.com/pyatkovpetr/emse"
+url: "https://github.com/pyatkovpetr/emse/tree/f10-v5-artifact-r1/F10-v5"

@@ -1,0 +1,10 @@
+{
+  "original_archive_sha256": "6069e1624cd81458be901992c41d578952122857a3f5ead11df4ab184b5653b2",
+  "submission_trace_archive_sha256": "f7c7a9b198754f1d34ecdcec9366bb2c5e32daae9b38e3a56abed8537395d553",
+  "substantive_file_bytes_unchanged": true,
+  "files": 89339,
+  "omitted_ephemeral_files": 9648,
+  "omission_policy": "Signing keys, empty locks, Python caches; private original archive retained",
+  "credential_scan": "PASS",
+  "model_calls": 0
+}

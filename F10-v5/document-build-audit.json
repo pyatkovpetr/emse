@@ -1,0 +1,36 @@
+{
+  "abstract_words": 229,
+  "manuscript_words_without_generated_tables": 7334,
+  "keywords": 6,
+  "references": 10,
+  "core_structure": [
+    "Introduction",
+    "Methods",
+    "Results",
+    "Discussion"
+  ],
+  "auto_page_field": true,
+  "source": "manuscript.md",
+  "tables_generated_from_verified_saved_results": true,
+  "docx_visual_verification": "PASS_ALL_FINAL_PAGES",
+  "pdf_visual_verification": "PASS_ALL_FINAL_PAGES",
+  "documents": [
+    {
+      "name": "F10-EMSE-manuscript-v5-frozen-package",
+      "pages": 16,
+      "docx_sha256": "83f5e8f2648d86a75098a371dbfb3f134f2b09788e94e344f2407480078f6b51",
+      "pdf_sha256": "e1b6e5ad665fd9223c8f2aae7488b29db7a152fb5ff3e264424171e26aa6ec29",
+      "all_page_images_inspected": true,
+      "pdf_text_bounds_and_page_numbers": "PASS"
+    },
+    {
+      "name": "F10-EMSE-cover-letter-frozen-package",
+      "pages": 1,
+      "docx_sha256": "c07ecfd9441935ba222b5078de1af93daf8dcb92e053a4fd0cacdc3ecc5d5039",
+      "pdf_sha256": "c651440098b937cf8bc82c0b59402f44586b2456168de409b39e3b9570d43168",
+      "all_page_images_inspected": true,
+      "pdf_text_bounds_and_page_numbers": "PASS"
+    }
+  ],
+  "visual_review": "All 16 manuscript pages and the single cover-letter page reviewed from the final render; tables, listings, diagram, headings and footers readable without overlap or clipping."
+}

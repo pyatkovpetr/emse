@@ -1,0 +1,23 @@
+{
+  "title": "Source Conditioned Completion Contracts in an LLM Agent Harness",
+  "article_type": "Research Papers",
+  "special_issue": "Agentic Software Engineering: The Rise of AI Teammates",
+  "author": {
+    "name": "Petr A. Piatkov",
+    "affiliation": "Independent researcher",
+    "city": "Ufa",
+    "country": "Russian Federation",
+    "email": "bigbox89@mail.ru",
+    "orcid": "0009-0003-0423-6467"
+  },
+  "sole_author": true,
+  "external_funding": false,
+  "commercial_relationships": false,
+  "previously_published": false,
+  "under_consideration_elsewhere": false,
+  "author_confirmed_declarations": true,
+  "harness_developer_involvement_disclosed": true,
+  "ai_assistance_disclosed": true,
+  "public_deposit": null,
+  "submission_status": "PREPARED_LOCALLY_NOT_SUBMITTED"
+}

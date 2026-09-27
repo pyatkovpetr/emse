@@ -1,0 +1,1014 @@
+{
+  "study_id": "F10-EMSE-CLEAN-V5-2026-09-25",
+  "analysis_role": "Additional descriptive audit after campaign; frozen primary analysis unchanged",
+  "model_calls": 0,
+  "windows_verified": 4800,
+  "pairs_verified": 2400,
+  "counts": {
+    "provider_requests": 6441,
+    "transport_receipts": 6441,
+    "provider_failure_receipts": 7
+  },
+  "all_request_route_mismatches": [],
+  "all_per_task_saved_outcomes_match": true,
+  "excluded_ids": 2320,
+  "selected_excluded_overlap": 0,
+  "schemas": 2,
+  "models": {
+    "qwen3.6-fp8-noreason": {
+      "arms": {
+        "rich": {
+          "windows": 600,
+          "prompt_tokens": 2254744,
+          "completion_tokens": 207251,
+          "requests": 800,
+          "provider_retry_attempts_observed": 0,
+          "provider_failure_receipts": 0,
+          "model_terminal_tool_results": 628,
+          "windows_multiple_model_terminal_calls": 115,
+          "synthetic_terminal_tool_results": 86,
+          "negative_tool_results": 39,
+          "native_negative_terminal_results": 29,
+          "windows_negative_then_accepted_completion": 29,
+          "windows_executor_guard_feedback": 86,
+          "windows_guard_then_accepted_completion": 0,
+          "completion_reasons": {
+            "stalled": 86,
+            "criteria_met": 426,
+            "direct_terminal_path": 87,
+            "blocked": 1
+          },
+          "wall_seconds_mean": 3.8035166666666664,
+          "wall_seconds_median": 2.803,
+          "wall_seconds_p95": 9.206
+        },
+        "selective": {
+          "windows": 600,
+          "prompt_tokens": 1675297,
+          "completion_tokens": 152468,
+          "requests": 748,
+          "provider_retry_attempts_observed": 0,
+          "provider_failure_receipts": 0,
+          "model_terminal_tool_results": 597,
+          "windows_multiple_model_terminal_calls": 103,
+          "synthetic_terminal_tool_results": 74,
+          "negative_tool_results": 31,
+          "native_negative_terminal_results": 29,
+          "windows_negative_then_accepted_completion": 29,
+          "windows_executor_guard_feedback": 74,
+          "windows_guard_then_accepted_completion": 0,
+          "completion_reasons": {
+            "stalled": 74,
+            "direct_terminal_path": 106,
+            "criteria_met": 418,
+            "blocked": 2
+          },
+          "wall_seconds_mean": 3.2535616666666667,
+          "wall_seconds_median": 2.402,
+          "wall_seconds_p95": 8.205
+        }
+      },
+      "families": {
+        "gsm8k": {
+          "rich": {
+            "windows": 200,
+            "prompt_tokens": 562289,
+            "completion_tokens": 61898,
+            "requests": 250,
+            "provider_retry_attempts_observed": 0,
+            "provider_failure_receipts": 0,
+            "model_terminal_tool_results": 231,
+            "windows_multiple_model_terminal_calls": 42,
+            "synthetic_terminal_tool_results": 15,
+            "negative_tool_results": 27,
+            "native_negative_terminal_results": 27,
+            "windows_negative_then_accepted_completion": 27,
+            "windows_executor_guard_feedback": 15,
+            "windows_guard_then_accepted_completion": 0,
+            "completion_reasons": {
+              "stalled": 15,
+              "criteria_met": 174,
+              "direct_terminal_path": 11
+            },
+            "wall_seconds_mean": 2.9916,
+            "wall_seconds_median": 2.602,
+            "wall_seconds_p95": 6.004
+          },
+          "selective": {
+            "windows": 200,
+            "prompt_tokens": 556579,
+            "completion_tokens": 61873,
+            "requests": 249,
+            "provider_retry_attempts_observed": 0,
+            "provider_failure_receipts": 0,
+            "model_terminal_tool_results": 226,
+            "windows_multiple_model_terminal_calls": 40,
+            "synthetic_terminal_tool_results": 15,
+            "negative_tool_results": 25,
+            "native_negative_terminal_results": 25,
+            "windows_negative_then_accepted_completion": 25,
+            "windows_executor_guard_feedback": 15,
+            "windows_guard_then_accepted_completion": 0,
+            "completion_reasons": {
+              "stalled": 15,
+              "direct_terminal_path": 14,
+              "criteria_met": 171
+            },
+            "wall_seconds_mean": 2.969635,
+            "wall_seconds_median": 2.602,
+            "wall_seconds_p95": 6.404
+          }
+        },
+        "mmlu": {
+          "rich": {
+            "windows": 200,
+            "prompt_tokens": 774745,
+            "completion_tokens": 112823,
+            "requests": 272,
+            "provider_retry_attempts_observed": 0,
+            "provider_failure_receipts": 0,
+            "model_terminal_tool_results": 185,
+            "windows_multiple_model_terminal_calls": 32,
+            "synthetic_terminal_tool_results": 30,
+            "negative_tool_results": 12,
+            "native_negative_terminal_results": 2,
+            "windows_negative_then_accepted_completion": 2,
+            "windows_executor_guard_feedback": 30,
+            "windows_guard_then_accepted_completion": 0,
+            "completion_reasons": {
+              "criteria_met": 122,
+              "direct_terminal_path": 47,
+              "stalled": 30,
+              "blocked": 1
+            },
+            "wall_seconds_mean": 4.954965,
+            "wall_seconds_median": 3.803,
+            "wall_seconds_p95": 12.209
+          },
+          "selective": {
+            "windows": 200,
+            "prompt_tokens": 475312,
+            "completion_tokens": 81323,
+            "requests": 241,
+            "provider_retry_attempts_observed": 0,
+            "provider_failure_receipts": 0,
+            "model_terminal_tool_results": 151,
+            "windows_multiple_model_terminal_calls": 23,
+            "synthetic_terminal_tool_results": 21,
+            "negative_tool_results": 4,
+            "native_negative_terminal_results": 2,
+            "windows_negative_then_accepted_completion": 2,
+            "windows_executor_guard_feedback": 21,
+            "windows_guard_then_accepted_completion": 0,
+            "completion_reasons": {
+              "criteria_met": 106,
+              "direct_terminal_path": 72,
+              "stalled": 21,
+              "blocked": 1
+            },
+            "wall_seconds_mean": 4.25254,
+            "wall_seconds_median": 2.402,
+            "wall_seconds_p95": 12.208
+          }
+        },
+        "squad2": {
+          "rich": {
+            "windows": 200,
+            "prompt_tokens": 917710,
+            "completion_tokens": 32530,
+            "requests": 278,
+            "provider_retry_attempts_observed": 0,
+            "provider_failure_receipts": 0,
+            "model_terminal_tool_results": 212,
+            "windows_multiple_model_terminal_calls": 41,
+            "synthetic_terminal_tool_results": 41,
+            "negative_tool_results": 0,
+            "native_negative_terminal_results": 0,
+            "windows_negative_then_accepted_completion": 0,
+            "windows_executor_guard_feedback": 41,
+            "windows_guard_then_accepted_completion": 0,
+            "completion_reasons": {
+              "stalled": 41,
+              "criteria_met": 130,
+              "direct_terminal_path": 29
+            },
+            "wall_seconds_mean": 3.463985,
+            "wall_seconds_median": 2.802,
+            "wall_seconds_p95": 8.006
+          },
+          "selective": {
+            "windows": 200,
+            "prompt_tokens": 643406,
+            "completion_tokens": 9272,
+            "requests": 258,
+            "provider_retry_attempts_observed": 0,
+            "provider_failure_receipts": 0,
+            "model_terminal_tool_results": 220,
+            "windows_multiple_model_terminal_calls": 40,
+            "synthetic_terminal_tool_results": 38,
+            "negative_tool_results": 2,
+            "native_negative_terminal_results": 2,
+            "windows_negative_then_accepted_completion": 2,
+            "windows_executor_guard_feedback": 38,
+            "windows_guard_then_accepted_completion": 0,
+            "completion_reasons": {
+              "stalled": 38,
+              "criteria_met": 141,
+              "direct_terminal_path": 20,
+              "blocked": 1
+            },
+            "wall_seconds_mean": 2.53851,
+            "wall_seconds_median": 2.002,
+            "wall_seconds_p95": 6.405
+          }
+        }
+      },
+      "paired_wall_seconds_saved_mean": 0.549955,
+      "paired_wall_seconds_saved_median": 0.5999999999999999
+    },
+    "deepseek-v4.1-flash": {
+      "arms": {
+        "rich": {
+          "windows": 600,
+          "prompt_tokens": 1927679,
+          "completion_tokens": 192148,
+          "requests": 703,
+          "provider_retry_attempts_observed": 0,
+          "provider_failure_receipts": 0,
+          "model_terminal_tool_results": 647,
+          "windows_multiple_model_terminal_calls": 86,
+          "synthetic_terminal_tool_results": 86,
+          "negative_tool_results": 0,
+          "native_negative_terminal_results": 0,
+          "windows_negative_then_accepted_completion": 0,
+          "windows_executor_guard_feedback": 86,
+          "windows_guard_then_accepted_completion": 0,
+          "completion_reasons": {
+            "stalled": 86,
+            "criteria_met": 474,
+            "direct_terminal_path": 39,
+            "blocked": 1
+          },
+          "wall_seconds_mean": 26.360878333333332,
+          "wall_seconds_median": 5.004,
+          "wall_seconds_p95": 183.296
+        },
+        "selective": {
+          "windows": 600,
+          "prompt_tokens": 1534858,
+          "completion_tokens": 132701,
+          "requests": 689,
+          "provider_retry_attempts_observed": 0,
+          "provider_failure_receipts": 0,
+          "model_terminal_tool_results": 633,
+          "windows_multiple_model_terminal_calls": 74,
+          "synthetic_terminal_tool_results": 74,
+          "negative_tool_results": 0,
+          "native_negative_terminal_results": 0,
+          "windows_negative_then_accepted_completion": 0,
+          "windows_executor_guard_feedback": 74,
+          "windows_guard_then_accepted_completion": 0,
+          "completion_reasons": {
+            "stalled": 74,
+            "criteria_met": 484,
+            "direct_terminal_path": 41,
+            "blocked": 1
+          },
+          "wall_seconds_mean": 18.528596666666665,
+          "wall_seconds_median": 3.8025,
+          "wall_seconds_p95": 182.099
+        }
+      },
+      "families": {
+        "gsm8k": {
+          "rich": {
+            "windows": 200,
+            "prompt_tokens": 480216,
+            "completion_tokens": 57353,
+            "requests": 215,
+            "provider_retry_attempts_observed": 0,
+            "provider_failure_receipts": 0,
+            "model_terminal_tool_results": 213,
+            "windows_multiple_model_terminal_calls": 15,
+            "synthetic_terminal_tool_results": 15,
+            "negative_tool_results": 0,
+            "native_negative_terminal_results": 0,
+            "windows_negative_then_accepted_completion": 0,
+            "windows_executor_guard_feedback": 15,
+            "windows_guard_then_accepted_completion": 0,
+            "completion_reasons": {
+              "stalled": 15,
+              "criteria_met": 183,
+              "direct_terminal_path": 2
+            },
+            "wall_seconds_mean": 25.94988,
+            "wall_seconds_median": 6.405,
+            "wall_seconds_p95": 182.697
+          },
+          "selective": {
+            "windows": 200,
+            "prompt_tokens": 480225,
+            "completion_tokens": 56732,
+            "requests": 215,
+            "provider_retry_attempts_observed": 0,
+            "provider_failure_receipts": 0,
+            "model_terminal_tool_results": 213,
+            "windows_multiple_model_terminal_calls": 15,
+            "synthetic_terminal_tool_results": 15,
+            "negative_tool_results": 0,
+            "native_negative_terminal_results": 0,
+            "windows_negative_then_accepted_completion": 0,
+            "windows_executor_guard_feedback": 15,
+            "windows_guard_then_accepted_completion": 0,
+            "completion_reasons": {
+              "stalled": 15,
+              "criteria_met": 183,
+              "direct_terminal_path": 2
+            },
+            "wall_seconds_mean": 24.43682,
+            "wall_seconds_median": 6.404999999999999,
+            "wall_seconds_p95": 182.299
+          }
+        },
+        "mmlu": {
+          "rich": {
+            "windows": 200,
+            "prompt_tokens": 659821,
+            "completion_tokens": 75218,
+            "requests": 242,
+            "provider_retry_attempts_observed": 0,
+            "provider_failure_receipts": 0,
+            "model_terminal_tool_results": 208,
+            "windows_multiple_model_terminal_calls": 30,
+            "synthetic_terminal_tool_results": 30,
+            "negative_tool_results": 0,
+            "native_negative_terminal_results": 0,
+            "windows_negative_then_accepted_completion": 0,
+            "windows_executor_guard_feedback": 30,
+            "windows_guard_then_accepted_completion": 0,
+            "completion_reasons": {
+              "criteria_met": 147,
+              "stalled": 30,
+              "direct_terminal_path": 22,
+              "blocked": 1
+            },
+            "wall_seconds_mean": 24.04586,
+            "wall_seconds_median": 4.303,
+            "wall_seconds_p95": 183.697
+          },
+          "selective": {
+            "windows": 200,
+            "prompt_tokens": 460383,
+            "completion_tokens": 54156,
+            "requests": 233,
+            "provider_retry_attempts_observed": 0,
+            "provider_failure_receipts": 0,
+            "model_terminal_tool_results": 194,
+            "windows_multiple_model_terminal_calls": 21,
+            "synthetic_terminal_tool_results": 21,
+            "negative_tool_results": 0,
+            "native_negative_terminal_results": 0,
+            "windows_negative_then_accepted_completion": 0,
+            "windows_executor_guard_feedback": 21,
+            "windows_guard_then_accepted_completion": 0,
+            "completion_reasons": {
+              "criteria_met": 151,
+              "stalled": 21,
+              "direct_terminal_path": 27,
+              "blocked": 1
+            },
+            "wall_seconds_mean": 9.29975,
+            "wall_seconds_median": 2.802,
+            "wall_seconds_p95": 32.616
+          }
+        },
+        "squad2": {
+          "rich": {
+            "windows": 200,
+            "prompt_tokens": 787642,
+            "completion_tokens": 59577,
+            "requests": 246,
+            "provider_retry_attempts_observed": 0,
+            "provider_failure_receipts": 0,
+            "model_terminal_tool_results": 226,
+            "windows_multiple_model_terminal_calls": 41,
+            "synthetic_terminal_tool_results": 41,
+            "negative_tool_results": 0,
+            "native_negative_terminal_results": 0,
+            "windows_negative_then_accepted_completion": 0,
+            "windows_executor_guard_feedback": 41,
+            "windows_guard_then_accepted_completion": 0,
+            "completion_reasons": {
+              "stalled": 41,
+              "direct_terminal_path": 15,
+              "criteria_met": 144
+            },
+            "wall_seconds_mean": 29.086895,
+            "wall_seconds_median": 3.403,
+            "wall_seconds_p95": 184.708
+          },
+          "selective": {
+            "windows": 200,
+            "prompt_tokens": 594250,
+            "completion_tokens": 21813,
+            "requests": 241,
+            "provider_retry_attempts_observed": 0,
+            "provider_failure_receipts": 0,
+            "model_terminal_tool_results": 226,
+            "windows_multiple_model_terminal_calls": 38,
+            "synthetic_terminal_tool_results": 38,
+            "negative_tool_results": 0,
+            "native_negative_terminal_results": 0,
+            "windows_negative_then_accepted_completion": 0,
+            "windows_executor_guard_feedback": 38,
+            "windows_guard_then_accepted_completion": 0,
+            "completion_reasons": {
+              "stalled": 38,
+              "direct_terminal_path": 12,
+              "criteria_met": 150
+            },
+            "wall_seconds_mean": 21.84922,
+            "wall_seconds_median": 2.202,
+            "wall_seconds_p95": 182.497
+          }
+        }
+      },
+      "paired_wall_seconds_saved_mean": 7.832281666666667,
+      "paired_wall_seconds_saved_median": 0.8010000000000002
+    },
+    "glm-5.3-flash": {
+      "arms": {
+        "rich": {
+          "windows": 600,
+          "prompt_tokens": 1940486,
+          "completion_tokens": 408421,
+          "requests": 743,
+          "provider_retry_attempts_observed": 1,
+          "provider_failure_receipts": 1,
+          "model_terminal_tool_results": 705,
+          "windows_multiple_model_terminal_calls": 119,
+          "synthetic_terminal_tool_results": 84,
+          "negative_tool_results": 49,
+          "native_negative_terminal_results": 49,
+          "windows_negative_then_accepted_completion": 33,
+          "windows_executor_guard_feedback": 84,
+          "windows_guard_then_accepted_completion": 0,
+          "completion_reasons": {
+            "stalled": 84,
+            "criteria_met": 485,
+            "direct_terminal_path": 30,
+            "partial": 1
+          },
+          "wall_seconds_mean": 23.403768333333332,
+          "wall_seconds_median": 9.208,
+          "wall_seconds_p95": 88.336
+        },
+        "selective": {
+          "windows": 600,
+          "prompt_tokens": 1435783,
+          "completion_tokens": 255523,
+          "requests": 703,
+          "provider_retry_attempts_observed": 4,
+          "provider_failure_receipts": 5,
+          "model_terminal_tool_results": 692,
+          "windows_multiple_model_terminal_calls": 89,
+          "synthetic_terminal_tool_results": 74,
+          "negative_tool_results": 23,
+          "native_negative_terminal_results": 23,
+          "windows_negative_then_accepted_completion": 15,
+          "windows_executor_guard_feedback": 74,
+          "windows_guard_then_accepted_completion": 0,
+          "completion_reasons": {
+            "stalled": 74,
+            "criteria_met": 521,
+            "direct_terminal_path": 4,
+            "null": 1
+          },
+          "wall_seconds_mean": 17.258723333333332,
+          "wall_seconds_median": 8.205,
+          "wall_seconds_p95": 51.23
+        }
+      },
+      "families": {
+        "gsm8k": {
+          "rich": {
+            "windows": 200,
+            "prompt_tokens": 479172,
+            "completion_tokens": 90046,
+            "requests": 229,
+            "provider_retry_attempts_observed": 0,
+            "provider_failure_receipts": 0,
+            "model_terminal_tool_results": 228,
+            "windows_multiple_model_terminal_calls": 27,
+            "synthetic_terminal_tool_results": 14,
+            "negative_tool_results": 14,
+            "native_negative_terminal_results": 14,
+            "windows_negative_then_accepted_completion": 12,
+            "windows_executor_guard_feedback": 14,
+            "windows_guard_then_accepted_completion": 0,
+            "completion_reasons": {
+              "stalled": 14,
+              "criteria_met": 184,
+              "direct_terminal_path": 1,
+              "partial": 1
+            },
+            "wall_seconds_mean": 14.117385,
+            "wall_seconds_median": 8.006499999999999,
+            "wall_seconds_p95": 50.23
+          },
+          "selective": {
+            "windows": 200,
+            "prompt_tokens": 495488,
+            "completion_tokens": 94116,
+            "requests": 235,
+            "provider_retry_attempts_observed": 0,
+            "provider_failure_receipts": 0,
+            "model_terminal_tool_results": 234,
+            "windows_multiple_model_terminal_calls": 30,
+            "synthetic_terminal_tool_results": 15,
+            "negative_tool_results": 20,
+            "native_negative_terminal_results": 20,
+            "windows_negative_then_accepted_completion": 15,
+            "windows_executor_guard_feedback": 15,
+            "windows_guard_then_accepted_completion": 0,
+            "completion_reasons": {
+              "stalled": 15,
+              "criteria_met": 184,
+              "direct_terminal_path": 1
+            },
+            "wall_seconds_mean": 14.575990000000001,
+            "wall_seconds_median": 8.206,
+            "wall_seconds_p95": 54.633
+          }
+        },
+        "mmlu": {
+          "rich": {
+            "windows": 200,
+            "prompt_tokens": 657586,
+            "completion_tokens": 193481,
+            "requests": 246,
+            "provider_retry_attempts_observed": 0,
+            "provider_failure_receipts": 0,
+            "model_terminal_tool_results": 236,
+            "windows_multiple_model_terminal_calls": 36,
+            "synthetic_terminal_tool_results": 29,
+            "negative_tool_results": 14,
+            "native_negative_terminal_results": 14,
+            "windows_negative_then_accepted_completion": 6,
+            "windows_executor_guard_feedback": 29,
+            "windows_guard_then_accepted_completion": 0,
+            "completion_reasons": {
+              "criteria_met": 163,
+              "stalled": 29,
+              "direct_terminal_path": 8
+            },
+            "wall_seconds_mean": 31.176955,
+            "wall_seconds_median": 12.1075,
+            "wall_seconds_p95": 109.658
+          },
+          "selective": {
+            "windows": 200,
+            "prompt_tokens": 371965,
+            "completion_tokens": 95372,
+            "requests": 221,
+            "provider_retry_attempts_observed": 0,
+            "provider_failure_receipts": 0,
+            "model_terminal_tool_results": 220,
+            "windows_multiple_model_terminal_calls": 21,
+            "synthetic_terminal_tool_results": 21,
+            "negative_tool_results": 0,
+            "native_negative_terminal_results": 0,
+            "windows_negative_then_accepted_completion": 0,
+            "windows_executor_guard_feedback": 21,
+            "windows_guard_then_accepted_completion": 0,
+            "completion_reasons": {
+              "criteria_met": 178,
+              "stalled": 21,
+              "direct_terminal_path": 1
+            },
+            "wall_seconds_mean": 18.6117,
+            "wall_seconds_median": 9.6055,
+            "wall_seconds_p95": 51.23
+          }
+        },
+        "squad2": {
+          "rich": {
+            "windows": 200,
+            "prompt_tokens": 803728,
+            "completion_tokens": 124894,
+            "requests": 268,
+            "provider_retry_attempts_observed": 1,
+            "provider_failure_receipts": 1,
+            "model_terminal_tool_results": 241,
+            "windows_multiple_model_terminal_calls": 56,
+            "synthetic_terminal_tool_results": 41,
+            "negative_tool_results": 21,
+            "native_negative_terminal_results": 21,
+            "windows_negative_then_accepted_completion": 15,
+            "windows_executor_guard_feedback": 41,
+            "windows_guard_then_accepted_completion": 0,
+            "completion_reasons": {
+              "stalled": 41,
+              "direct_terminal_path": 21,
+              "criteria_met": 138
+            },
+            "wall_seconds_mean": 24.916965,
+            "wall_seconds_median": 8.806,
+            "wall_seconds_p95": 94.454
+          },
+          "selective": {
+            "windows": 200,
+            "prompt_tokens": 568330,
+            "completion_tokens": 66035,
+            "requests": 247,
+            "provider_retry_attempts_observed": 4,
+            "provider_failure_receipts": 5,
+            "model_terminal_tool_results": 238,
+            "windows_multiple_model_terminal_calls": 38,
+            "synthetic_terminal_tool_results": 38,
+            "negative_tool_results": 3,
+            "native_negative_terminal_results": 3,
+            "windows_negative_then_accepted_completion": 0,
+            "windows_executor_guard_feedback": 38,
+            "windows_guard_then_accepted_completion": 0,
+            "completion_reasons": {
+              "stalled": 38,
+              "criteria_met": 159,
+              "direct_terminal_path": 2,
+              "null": 1
+            },
+            "wall_seconds_mean": 18.58848,
+            "wall_seconds_median": 6.404,
+            "wall_seconds_p95": 39.425
+          }
+        }
+      },
+      "paired_wall_seconds_saved_mean": 6.145045,
+      "paired_wall_seconds_saved_median": 1.201
+    },
+    "gpt-oss-120b": {
+      "arms": {
+        "rich": {
+          "windows": 600,
+          "prompt_tokens": 2948238,
+          "completion_tokens": 312651,
+          "requests": 1182,
+          "provider_retry_attempts_observed": 1,
+          "provider_failure_receipts": 1,
+          "model_terminal_tool_results": 534,
+          "windows_multiple_model_terminal_calls": 178,
+          "synthetic_terminal_tool_results": 80,
+          "negative_tool_results": 397,
+          "native_negative_terminal_results": 143,
+          "windows_negative_then_accepted_completion": 91,
+          "windows_executor_guard_feedback": 80,
+          "windows_guard_then_accepted_completion": 0,
+          "completion_reasons": {
+            "stalled": 80,
+            "criteria_met": 218,
+            "direct_terminal_path": 294,
+            "blocked": 3,
+            "partial": 4,
+            "terminal_contract_failed": 1
+          },
+          "wall_seconds_mean": 13.53097,
+          "wall_seconds_median": 8.005500000000001,
+          "wall_seconds_p95": 39.42
+        },
+        "selective": {
+          "windows": 600,
+          "prompt_tokens": 1799575,
+          "completion_tokens": 199067,
+          "requests": 873,
+          "provider_retry_attempts_observed": 0,
+          "provider_failure_receipts": 0,
+          "model_terminal_tool_results": 572,
+          "windows_multiple_model_terminal_calls": 106,
+          "synthetic_terminal_tool_results": 74,
+          "negative_tool_results": 168,
+          "native_negative_terminal_results": 52,
+          "windows_negative_then_accepted_completion": 32,
+          "windows_executor_guard_feedback": 74,
+          "windows_guard_then_accepted_completion": 0,
+          "completion_reasons": {
+            "stalled": 74,
+            "direct_terminal_path": 154,
+            "criteria_met": 372
+          },
+          "wall_seconds_mean": 8.880461666666667,
+          "wall_seconds_median": 5.5035,
+          "wall_seconds_p95": 27.215
+        }
+      },
+      "families": {
+        "gsm8k": {
+          "rich": {
+            "windows": 200,
+            "prompt_tokens": 717855,
+            "completion_tokens": 80205,
+            "requests": 351,
+            "provider_retry_attempts_observed": 1,
+            "provider_failure_receipts": 1,
+            "model_terminal_tool_results": 152,
+            "windows_multiple_model_terminal_calls": 49,
+            "synthetic_terminal_tool_results": 15,
+            "negative_tool_results": 124,
+            "native_negative_terminal_results": 49,
+            "windows_negative_then_accepted_completion": 34,
+            "windows_executor_guard_feedback": 15,
+            "windows_guard_then_accepted_completion": 0,
+            "completion_reasons": {
+              "stalled": 15,
+              "criteria_met": 73,
+              "direct_terminal_path": 112
+            },
+            "wall_seconds_mean": 12.60783,
+            "wall_seconds_median": 6.904999999999999,
+            "wall_seconds_p95": 36.422
+          },
+          "selective": {
+            "windows": 200,
+            "prompt_tokens": 703217,
+            "completion_tokens": 78774,
+            "requests": 352,
+            "provider_retry_attempts_observed": 0,
+            "provider_failure_receipts": 0,
+            "model_terminal_tool_results": 149,
+            "windows_multiple_model_terminal_calls": 46,
+            "synthetic_terminal_tool_results": 15,
+            "negative_tool_results": 125,
+            "native_negative_terminal_results": 51,
+            "windows_negative_then_accepted_completion": 31,
+            "windows_executor_guard_feedback": 15,
+            "windows_guard_then_accepted_completion": 0,
+            "completion_reasons": {
+              "stalled": 15,
+              "direct_terminal_path": 117,
+              "criteria_met": 68
+            },
+            "wall_seconds_mean": 11.334055,
+            "wall_seconds_median": 7.006,
+            "wall_seconds_p95": 37.022
+          }
+        },
+        "mmlu": {
+          "rich": {
+            "windows": 200,
+            "prompt_tokens": 1084707,
+            "completion_tokens": 122459,
+            "requests": 454,
+            "provider_retry_attempts_observed": 0,
+            "provider_failure_receipts": 0,
+            "model_terminal_tool_results": 207,
+            "windows_multiple_model_terminal_calls": 67,
+            "synthetic_terminal_tool_results": 29,
+            "negative_tool_results": 194,
+            "native_negative_terminal_results": 64,
+            "windows_negative_then_accepted_completion": 37,
+            "windows_executor_guard_feedback": 29,
+            "windows_guard_then_accepted_completion": 0,
+            "completion_reasons": {
+              "direct_terminal_path": 87,
+              "stalled": 29,
+              "criteria_met": 82,
+              "blocked": 1,
+              "partial": 1
+            },
+            "wall_seconds_mean": 16.589480000000002,
+            "wall_seconds_median": 11.607,
+            "wall_seconds_p95": 47.025
+          },
+          "selective": {
+            "windows": 200,
+            "prompt_tokens": 438061,
+            "completion_tokens": 64766,
+            "requests": 248,
+            "provider_retry_attempts_observed": 0,
+            "provider_failure_receipts": 0,
+            "model_terminal_tool_results": 207,
+            "windows_multiple_model_terminal_calls": 21,
+            "synthetic_terminal_tool_results": 21,
+            "negative_tool_results": 24,
+            "native_negative_terminal_results": 0,
+            "windows_negative_then_accepted_completion": 0,
+            "windows_executor_guard_feedback": 21,
+            "windows_guard_then_accepted_completion": 0,
+            "completion_reasons": {
+              "criteria_met": 165,
+              "direct_terminal_path": 14,
+              "stalled": 21
+            },
+            "wall_seconds_mean": 8.983395,
+            "wall_seconds_median": 6.004,
+            "wall_seconds_p95": 27.215
+          }
+        },
+        "squad2": {
+          "rich": {
+            "windows": 200,
+            "prompt_tokens": 1145676,
+            "completion_tokens": 109987,
+            "requests": 377,
+            "provider_retry_attempts_observed": 0,
+            "provider_failure_receipts": 0,
+            "model_terminal_tool_results": 175,
+            "windows_multiple_model_terminal_calls": 62,
+            "synthetic_terminal_tool_results": 36,
+            "negative_tool_results": 79,
+            "native_negative_terminal_results": 30,
+            "windows_negative_then_accepted_completion": 20,
+            "windows_executor_guard_feedback": 36,
+            "windows_guard_then_accepted_completion": 0,
+            "completion_reasons": {
+              "stalled": 36,
+              "direct_terminal_path": 95,
+              "criteria_met": 63,
+              "terminal_contract_failed": 1,
+              "partial": 3,
+              "blocked": 2
+            },
+            "wall_seconds_mean": 11.3956,
+            "wall_seconds_median": 6.2035,
+            "wall_seconds_p95": 34.818
+          },
+          "selective": {
+            "windows": 200,
+            "prompt_tokens": 658297,
+            "completion_tokens": 55527,
+            "requests": 273,
+            "provider_retry_attempts_observed": 0,
+            "provider_failure_receipts": 0,
+            "model_terminal_tool_results": 216,
+            "windows_multiple_model_terminal_calls": 39,
+            "synthetic_terminal_tool_results": 38,
+            "negative_tool_results": 19,
+            "native_negative_terminal_results": 1,
+            "windows_negative_then_accepted_completion": 1,
+            "windows_executor_guard_feedback": 38,
+            "windows_guard_then_accepted_completion": 0,
+            "completion_reasons": {
+              "stalled": 38,
+              "criteria_met": 139,
+              "direct_terminal_path": 23
+            },
+            "wall_seconds_mean": 6.323935,
+            "wall_seconds_median": 3.602,
+            "wall_seconds_p95": 20.612
+          }
+        }
+      },
+      "paired_wall_seconds_saved_mean": 4.650508333333334,
+      "paired_wall_seconds_saved_median": 1.6994999999999987
+    }
+  },
+  "integrity_failure_records": [
+    {
+      "model": "glm-5.3-flash",
+      "task_id": "squad2_5730b1022461fd1900a9cfa3",
+      "arm": "rich",
+      "transport_errors": [
+        {
+          "index": 1,
+          "status": "PROVIDER_FAILURE",
+          "error_type": "HTTPError",
+          "http_status": 503,
+          "wall_sec": 4.044428
+        }
+      ],
+      "usage_complete": false,
+      "provider_failures": 1,
+      "known_infrastructure_errors": [],
+      "tool_infrastructure_errors": [],
+      "timed_out": false,
+      "grade": {
+        "case_id": "squad2_5730b1022461fd1900a9cfa3",
+        "mechanisms": [
+          "F10"
+        ],
+        "exposure": "not_measured_by_grader",
+        "correctness": true,
+        "evaluable": true,
+        "score": 1.0,
+        "terminal_completed": null,
+        "grader_status": "ok",
+        "response_sha256": "12fb7b835d44de11f6cf0365cd49304d84fe9eeff9fdcd21330f8fcd9eaf1b81",
+        "evaluator": "deterministic_answer_c1_v2_host_envelope_fix",
+        "response_format_valid": true,
+        "exact_match": 1.0,
+        "token_f1": 1.0
+      },
+      "completion_reason": "direct_terminal_path",
+      "recorded_prompt_tokens": 1851,
+      "recorded_completion_tokens": 51
+    },
+    {
+      "model": "glm-5.3-flash",
+      "task_id": "squad2_5727de862ca10214002d9862",
+      "arm": "selective",
+      "transport_errors": [
+        {
+          "index": 1,
+          "status": "PROVIDER_FAILURE",
+          "error_type": "HTTPError",
+          "http_status": 400,
+          "wall_sec": 4.170541
+        },
+        {
+          "index": 2,
+          "status": "PROVIDER_FAILURE",
+          "error_type": "HTTPError",
+          "http_status": 400,
+          "wall_sec": 4.560838
+        },
+        {
+          "index": 3,
+          "status": "PROVIDER_FAILURE",
+          "error_type": "HTTPError",
+          "http_status": 400,
+          "wall_sec": 5.212224
+        },
+        {
+          "index": 4,
+          "status": "PROVIDER_FAILURE",
+          "error_type": "HTTPError",
+          "http_status": 400,
+          "wall_sec": 5.192885
+        },
+        {
+          "index": 5,
+          "status": "PROVIDER_FAILURE",
+          "error_type": "HTTPError",
+          "http_status": 400,
+          "wall_sec": 1.858109
+        }
+      ],
+      "usage_complete": false,
+      "provider_failures": 5,
+      "known_infrastructure_errors": [
+        "provider recovery exhausted"
+      ],
+      "tool_infrastructure_errors": [],
+      "timed_out": false,
+      "grade": {
+        "case_id": "squad2_5727de862ca10214002d9862",
+        "mechanisms": [
+          "F10"
+        ],
+        "exposure": "not_measured_by_grader",
+        "correctness": false,
+        "evaluable": false,
+        "score": 0.0,
+        "terminal_completed": null,
+        "grader_status": "ok",
+        "response_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "evaluator": "deterministic_answer_c1_v2_host_envelope_fix",
+        "response_format_valid": false
+      },
+      "completion_reason": null,
+      "recorded_prompt_tokens": 0,
+      "recorded_completion_tokens": 0
+    },
+    {
+      "model": "gpt-oss-120b",
+      "task_id": "gsm8k_test-0639",
+      "arm": "rich",
+      "transport_errors": [
+        {
+          "index": 1,
+          "status": "PROVIDER_FAILURE",
+          "error_type": "HTTPError",
+          "http_status": 504,
+          "wall_sec": 187.225844
+        }
+      ],
+      "usage_complete": false,
+      "provider_failures": 1,
+      "known_infrastructure_errors": [],
+      "tool_infrastructure_errors": [],
+      "timed_out": false,
+      "grade": {
+        "case_id": "gsm8k_test-0639",
+        "mechanisms": [
+          "F10"
+        ],
+        "exposure": "not_measured_by_grader",
+        "correctness": true,
+        "evaluable": true,
+        "score": 1.0,
+        "terminal_completed": null,
+        "grader_status": "ok",
+        "response_sha256": "b9ad00ef2845945ec350949e327ec2f2585246585cb0e963be5039668e484175",
+        "evaluator": "deterministic_answer_c1_v2_host_envelope_fix",
+        "response_format_valid": false,
+        "predicted_canonical": "216"
+      },
+      "completion_reason": "direct_terminal_path",
+      "recorded_prompt_tokens": 1269,
+      "recorded_completion_tokens": 80
+    }
+  ],
+  "provider_retry_definition": "Identical canonical payload resubmissions immediately following a failed provider receipt, with no intervening success. Heartbeat attempt fields are not used: they remain 1 during lower-layer retries.",
+  "executor_guard_definition": "Controller event text matching executor validation, file changes, or tool_refusal; descriptive trace classification",
+  "receipt_hash_scope": "Canonical request hash and saved response usage verified; original HTTP response body bytes were not saved",
+  "unreported_failed_call_token_expenditure": "Unknown where failed provider receipt has no usage; not invented or silently treated as complete accounting"
+}

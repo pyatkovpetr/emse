@@ -1,0 +1,242 @@
+{
+  "schema": "f10-four-model-clean-analysis-v1",
+  "protocol_sha256": "3128f026c139b7143871f2831e03479a590b8beceecbb48849d07c7f47e43976",
+  "tasks_sha256": "8c3e5785345373dca9cb0e03e7a0d2336b9b903b40b8b3952c3130c3557469ff",
+  "analysis_sha256": "3badf130dd163572d74ade121e56f550a6f632a967830a27ca38bdad862e4eed",
+  "bootstrap_repetitions": 10000,
+  "models": {
+    "qwen3.6-fp8-noreason": {
+      "status": "CONFIRMATION_PASS",
+      "tasks": 600,
+      "trials": 1200,
+      "provider_requests": 1548,
+      "logical_tokens_rich": 2461995,
+      "logical_tokens_selective": 1827765,
+      "saving": 0.25760815923671654,
+      "quality_loss": -0.045,
+      "integrity_failures": 0,
+      "by_family": {
+        "gsm8k": {
+          "tasks": 200,
+          "saving": 0.009187951687555172,
+          "quality_loss": -0.005,
+          "rich_correct": 170,
+          "selective_correct": 171
+        },
+        "mmlu": {
+          "tasks": 200,
+          "saving": 0.37285368557676707,
+          "quality_loss": -0.115,
+          "rich_correct": 129,
+          "selective_correct": 152
+        },
+        "squad2": {
+          "tasks": 200,
+          "saving": 0.31314404781949823,
+          "quality_loss": -0.015,
+          "rich_correct": 136,
+          "selective_correct": 139
+        }
+      },
+      "task_bootstrap": {
+        "saving_lower_multiplicity_adjusted": 0.227717916603461,
+        "quality_loss_upper_multiplicity_adjusted": -0.016666666666666666,
+        "saving_95pct": [
+          0.23189813985515226,
+          0.2824583327418186
+        ],
+        "quality_loss_95pct": [
+          -0.06999999999999999,
+          -0.02
+        ]
+      },
+      "source_cluster_sensitivity": {
+        "saving_lower_multiplicity_adjusted": 0.22391310598354777,
+        "quality_loss_upper_multiplicity_adjusted": -0.0183415327905728,
+        "saving_95pct": [
+          0.22829867083121208,
+          0.28427864325716123
+        ],
+        "quality_loss_95pct": [
+          -0.06816390226502586,
+          -0.02201331873745667
+        ]
+      }
+    },
+    "deepseek-v4.1-flash": {
+      "status": "CONFIRMATION_PASS",
+      "tasks": 600,
+      "trials": 1200,
+      "provider_requests": 1392,
+      "logical_tokens_rich": 2119827,
+      "logical_tokens_selective": 1667559,
+      "saving": 0.21335137254124983,
+      "quality_loss": -0.015,
+      "integrity_failures": 0,
+      "by_family": {
+        "gsm8k": {
+          "tasks": 200,
+          "saving": 0.0011384585048617015,
+          "quality_loss": -0.005,
+          "rich_correct": 179,
+          "selective_correct": 180
+        },
+        "mmlu": {
+          "tasks": 200,
+          "saving": 0.29998408247725633,
+          "quality_loss": -0.02,
+          "rich_correct": 158,
+          "selective_correct": 162
+        },
+        "squad2": {
+          "tasks": 200,
+          "saving": 0.27284090654246423,
+          "quality_loss": -0.02,
+          "rich_correct": 138,
+          "selective_correct": 142
+        }
+      },
+      "task_bootstrap": {
+        "saving_lower_multiplicity_adjusted": 0.18984737368286353,
+        "quality_loss_upper_multiplicity_adjusted": 0.0016666666666666668,
+        "saving_95pct": [
+          0.19346411181937623,
+          0.23332564962372682
+        ],
+        "quality_loss_95pct": [
+          -0.030000000000000002,
+          0.0
+        ]
+      },
+      "source_cluster_sensitivity": {
+        "saving_lower_multiplicity_adjusted": 0.18289106203936883,
+        "quality_loss_upper_multiplicity_adjusted": 0.0011996753819554715,
+        "saving_95pct": [
+          0.18698284634460632,
+          0.23756493713228624
+        ],
+        "quality_loss_95pct": [
+          -0.029468445116463262,
+          -0.0011091753774680605
+        ]
+      }
+    },
+    "glm-5.3-flash": {
+      "status": "CONFIRMATION_NOT_ESTABLISHED",
+      "tasks": 600,
+      "trials": 1200,
+      "provider_requests": 1446,
+      "logical_tokens_rich": 2348907,
+      "logical_tokens_selective": 1691306,
+      "saving": 0.27996042414620925,
+      "quality_loss": -0.016666666666666666,
+      "integrity_failures": 2,
+      "by_family": {
+        "gsm8k": {
+          "tasks": 200,
+          "saving": -0.03581404663942461,
+          "quality_loss": -0.01,
+          "rich_correct": 178,
+          "selective_correct": 180
+        },
+        "mmlu": {
+          "tasks": 200,
+          "saving": 0.4508810704680125,
+          "quality_loss": -0.025,
+          "rich_correct": 160,
+          "selective_correct": 165
+        },
+        "squad2": {
+          "tasks": 200,
+          "saving": 0.31687489635179866,
+          "quality_loss": -0.015,
+          "rich_correct": 136,
+          "selective_correct": 139
+        }
+      },
+      "task_bootstrap": {
+        "saving_lower_multiplicity_adjusted": 0.223052019139815,
+        "quality_loss_upper_multiplicity_adjusted": 0.0016666666666666672,
+        "saving_95pct": [
+          0.23003768494814655,
+          0.32584743288742
+        ],
+        "quality_loss_95pct": [
+          -0.034999999999999996,
+          0.0
+        ]
+      },
+      "source_cluster_sensitivity": {
+        "saving_lower_multiplicity_adjusted": 0.22499940457231943,
+        "quality_loss_upper_multiplicity_adjusted": 0.0014287863741686976,
+        "saving_95pct": [
+          0.232660930861424,
+          0.32648067557242916
+        ],
+        "quality_loss_95pct": [
+          -0.03294119514828221,
+          -0.001460688974535678
+        ]
+      }
+    },
+    "gpt-oss-120b": {
+      "status": "CONFIRMATION_NOT_ESTABLISHED",
+      "tasks": 600,
+      "trials": 1200,
+      "provider_requests": 2055,
+      "logical_tokens_rich": 3260889,
+      "logical_tokens_selective": 1998642,
+      "saving": 0.3870867729628331,
+      "quality_loss": -0.06833333333333333,
+      "integrity_failures": 1,
+      "by_family": {
+        "gsm8k": {
+          "tasks": 200,
+          "saving": 0.020135077563090496,
+          "quality_loss": 0.01,
+          "rich_correct": 170,
+          "selective_correct": 168
+        },
+        "mmlu": {
+          "tasks": 200,
+          "saving": 0.5834649087200932,
+          "quality_loss": -0.18,
+          "rich_correct": 122,
+          "selective_correct": 158
+        },
+        "squad2": {
+          "tasks": 200,
+          "saving": 0.431516258741398,
+          "quality_loss": -0.035,
+          "rich_correct": 132,
+          "selective_correct": 139
+        }
+      },
+      "task_bootstrap": {
+        "saving_lower_multiplicity_adjusted": 0.3424260500323324,
+        "quality_loss_upper_multiplicity_adjusted": -0.04,
+        "saving_95pct": [
+          0.3479792427823926,
+          0.4242384954975762
+        ],
+        "quality_loss_95pct": [
+          -0.09499999999999999,
+          -0.041666666666666664
+        ]
+      },
+      "source_cluster_sensitivity": {
+        "saving_lower_multiplicity_adjusted": 0.340840963336241,
+        "quality_loss_upper_multiplicity_adjusted": -0.040688081446375285,
+        "saving_95pct": [
+          0.34638289255299687,
+          0.4249553375495756
+        ],
+        "quality_loss_95pct": [
+          -0.09282449998643111,
+          -0.04394469676729895
+        ]
+      }
+    }
+  },
+  "interpretation": "qwen and deepseek individually pass the frozen model-level gate; GLM and GPT-OSS remain non-confirmatory because of integrity failures. The two-model aggregate is descriptive because the subgroup was selected after outcomes were observed."
+}

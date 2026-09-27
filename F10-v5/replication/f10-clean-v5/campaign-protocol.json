@@ -1,0 +1,60 @@
+{
+  "schema": "f10-emse-four-model-clean-confirmation-v5",
+  "phase": "single_prespecified_clean_QA_campaign",
+  "models": [
+    "qwen3.6-fp8-noreason",
+    "deepseek-v4.1-flash",
+    "glm-5.3-flash",
+    "gpt-oss-120b"
+  ],
+  "provider_endpoint": "https://api.neuraldeep.tech/v1",
+  "task_count": 600,
+  "family_task_count": 200,
+  "arms_per_task_per_model": [
+    "rich",
+    "selective"
+  ],
+  "same_600_task_ids_and_order_in_all_four_models": true,
+  "total_trial_windows": 4800,
+  "task_wall_seconds": 900,
+  "provider_attempt_timeout_seconds": 880,
+  "max_generation_tokens_per_step": 8192,
+  "context_window": 131072,
+  "global_hard_request_cap": null,
+  "global_hard_token_cap": null,
+  "planned_requests_per_model_not_a_stop_rule": 1350,
+  "planned_requests_total_not_a_stop_rule": 5400,
+  "primary": "sum of all logical prompt+completion tokens on all 600 assigned paired tasks per model, including failed and timed-out trials",
+  "practically_useful_effect": "at least 15 percent fewer assigned total tokens for selective versus rich",
+  "quality_guardrail": "correct and accepted completion; upper one-sided bound for rich-minus-selective loss below 0.05 per model",
+  "decision": "Report every model separately. A confirmatory pass requires zero integrity failures, cost-saving lower bounds above 0.15 and quality-loss upper bounds below 0.05 in both task-stratified and source-cluster bootstraps. No post-outcome method, binary, router, or task-set repair.",
+  "multiplicity": "Bonferroni four-model familywise alpha 0.05; one-sided alpha 0.0125 per model for both cost and quality gates; also show unadjusted descriptive intervals",
+  "independent_unit": "QA task identity; 200 per source family, one paired contrast per model; cluster MMLU by subject and SQuAD by article for sensitivity",
+  "missingness": "All assigned tasks retained. Timeout or unaccepted answer is a quality failure and its paid tokens count. Provider/integrity failure is explicitly missing, never silently replaced; pause a model if technical failures exceed max(3, 5 percent of completed trials)",
+  "router": {
+    "gsm8k": "rich",
+    "mmlu": "qa-direct",
+    "squad2": "qa-direct"
+  },
+  "source_label_available_before_generation": true,
+  "clean_holdout": "600 identities selected before any v2 model outcome; all IDs excluded from prior f10 clean and registered qa-terminal development ledger",
+  "clean_tasks_sha256": "8c3e5785345373dca9cb0e03e7a0d2336b9b903b40b8b3952c3130c3557469ff",
+  "clean_answers_sha256": "b4bd14d9888b6bad1dc5e6f70313f39035534e7784902a80e0778f3d26682047",
+  "selection_audit_sha256": "bcfdfd4e2346d0f98546e500a919dd7e0ca603afb01e4ef0cc554c11f2c01d60",
+  "binary_sha256": "2376fb27db0f6ec5543bcdeeb8d2e01d7943dabb994396d63089c7a03f1487cb",
+  "runner_sha256": {
+    "provider.py": "95abe342cde96c54a208fdd43bd3345cc77b3cf242453dd2cc5e34b751d1cd15",
+    "screen.py": "748cad3e888f1f7e2d9eafd2aa2173182d42dcb7e003d33c8b19fd98ea542623",
+    "cases.py": "941aea9f42446219423333497e4473e6f6cc26488deb10ad41c7b5cdb86de25f",
+    "qa_clean.py": "1399f14e1e3ae6ed3e697a867524250c13e0b59c5dd2277f5dd14127e7dd0070"
+  },
+  "orchestrator_sha256": "320461c04a121c28bc7bb1fd5bb759bc4c15192894a3514024de8cb8d895bab8",
+  "launcher_sha256": "e56d47c7febe83c8c55bfb1c5e76190200cbf492a3c3d53b06eefd15093842cc",
+  "analysis_sha256": "3badf130dd163572d74ade121e56f550a6f632a967830a27ca38bdad862e4eed",
+  "analyst_contact_with_clean_outcomes_before_freeze": false,
+  "manifest_status": "FROZEN",
+  "model_outcomes_opened": false,
+  "study_id": "F10-EMSE-CLEAN-V5-2026-09-25",
+  "retry_fix_revision": "provider-transient-retry-v2-fixed-five",
+  "provider_max_attempts": 5
+}

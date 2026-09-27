@@ -1,0 +1,13 @@
+{
+  "purpose": "Reference interface documentation; not recovered frozen v5 provider request schema",
+  "source_sha256": "ced27308ca7f0dda199c54d758126cb9aac1f82e9a27052769e0567911575c7f",
+  "git_head": "6e54c269597d6c7e063e751b88b71038e8aafe1e",
+  "task_completion_go_modified": false,
+  "configuration": "direct response mode; no adapter-defined completionOutcomes enum; rich or qa-direct",
+  "object_schema_helper": "type object, supplied properties/required, additionalProperties false",
+  "description": "Go stringSchema maps type string and exact description text. Parsed property and nested criterion maps are retained.",
+  "frozen_runtime_schema_objects_recovered": true,
+  "frozen_objects_equal_reference_objects": true,
+  "all_forwarded_request_count": 6441,
+  "schema_inventory": "../primary-audit/frozen-observed-schemas.json"
+}

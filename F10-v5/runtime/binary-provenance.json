@@ -1,0 +1,16 @@
+{
+  "study_id": "F10-EMSE-CLEAN-V5-2026-09-25",
+  "artifact_role": "Exact original executable used in the v5 campaign",
+  "filename": "orion-linux-amd64-v5",
+  "sha256": "2376fb27db0f6ec5543bcdeeb8d2e01d7943dabb994396d63089c7a03f1487cb",
+  "bytes": 23586943,
+  "format": "ELF",
+  "platform": "Linux amd64",
+  "go_version": "go1.26.2",
+  "base_git_revision": "a8c87a3f2804c9a61e07c0350e2cccb860dabe5c",
+  "vcs_modified": true,
+  "exact_modified_build_source_tree_available": false,
+  "windows_exe_included": false,
+  "new_binary_builds": 0,
+  "full_harness_source_public": false
+}

@@ -1,0 +1,11 @@
+{
+  "model_calls": 0,
+  "tasks": 600,
+  "excluded_ids": 2320,
+  "source": "Full frozen pools and exclusion ledger, without using outcome-selected IDs",
+  "exact_manifest_sha256": {
+    "tasks.jsonl": "8c3e5785345373dca9cb0e03e7a0d2336b9b903b40b8b3952c3130c3557469ff",
+    "answers.jsonl": "b4bd14d9888b6bad1dc5e6f70313f39035534e7784902a80e0778f3d26682047"
+  },
+  "freeze_chronology_or_prior_exposure_completeness_proved": false
+}

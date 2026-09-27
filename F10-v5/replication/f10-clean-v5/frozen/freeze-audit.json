@@ -1,0 +1,27 @@
+{
+  "schema": "f10-emse-clean-freeze-v5",
+  "study_id": "F10-EMSE-CLEAN-V5-2026-09-25",
+  "selection_before_model_outcomes": true,
+  "model_outcomes_opened": false,
+  "families": {
+    "gsm8k": 200,
+    "mmlu": 200,
+    "squad2": 200
+  },
+  "mmlu_subject_groups": {
+    "humanities": 50,
+    "social_sciences": 50,
+    "stem": 50,
+    "other": 50
+  },
+  "task_identities": 600,
+  "excluded_task_ids": 2320,
+  "tasks_sha256": "8c3e5785345373dca9cb0e03e7a0d2336b9b903b40b8b3952c3130c3557469ff",
+  "private_answers_sha256": "b4bd14d9888b6bad1dc5e6f70313f39035534e7784902a80e0778f3d26682047",
+  "excluded_ids_sha256": "d87b8f17d2168dedc4a1ec3144447650d12708640ff797f918f3c1e088558455",
+  "source_hashes": {
+    "gsm8k-test.jsonl": "3730d312f6e3440559ace48831e51066acaca737f6eabec99bccb9e4b3c39d14",
+    "mmlu-data.tar": "bec563ba4bac1d6aaf04141cd7d1605d7a5ca833e38f994051e818489592989b",
+    "squad2-dev.json": "80a5225e94905956a6446d296ca1093975c4d3b3260f1d6c8f68bc2ab77182d8"
+  }
+}

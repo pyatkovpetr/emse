@@ -1,0 +1,160 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "artifacts": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "kind": {
+            "description": "file, report, url, issue, or pull_request",
+            "type": "string"
+          },
+          "path": {
+            "description": "Repository-relative file path.",
+            "type": "string"
+          },
+          "title": {
+            "description": "Display title.",
+            "type": "string"
+          },
+          "url": {
+            "description": "External URL.",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "blockers": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "changed_files": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "criteria": {
+      "description": "Acceptance criteria and evidence.",
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "evidence": {
+            "description": "Short human-readable explanation. This text is not trusted as proof.",
+            "type": "string"
+          },
+          "evidence_refs": {
+            "description": "Host-issued evidence IDs from successful tool results, for example ev_018. Do not invent IDs.",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "id": {
+            "description": "Stable short criterion identifier.",
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "met",
+              "unmet"
+            ],
+            "type": "string"
+          },
+          "title": {
+            "description": "Concrete acceptance criterion.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "state",
+          "evidence",
+          "evidence_refs"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "evidence_refs": {
+      "description": "Host-issued evidence IDs selected for the terminal result. Orion derives refs from these receipts.",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "git_actions": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "outcome": {
+      "description": "Caller-owned outcome code. Preserve the exact value required by the task adapter.",
+      "type": "string"
+    },
+    "reason": {
+      "description": "Short machine-readable reason, e.g. criteria_met, blocked, stalled, provider_failed.",
+      "type": "string"
+    },
+    "recommendations": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "refs": {
+      "description": "Optional http(s) URLs or workspace file paths. Do not put profile_id, evidence IDs, or opaque UUIDs here.",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "remaining_actions": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "response": {
+      "description": "Exact user-facing answer or requested payload. For SQL this is the result rows as a markdown table, not a profile_id or evidence UUID. Never replace the payload with a link to the result.",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "completed",
+        "partial",
+        "blocked"
+      ],
+      "type": "string"
+    },
+    "summary": {
+      "description": "Concise outcome in the user's language.",
+      "type": "string"
+    },
+    "unverified_boundaries": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "verification": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "status",
+    "summary",
+    "criteria",
+    "evidence_refs",
+    "response"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,70 @@
+{
+  "model_calls": 0,
+  "frozen_original_files_unchanged": true,
+  "replication_zip_verified_all_members": true,
+  "submission_zip_verified_all_members": true,
+  "credential_scan": "PASS_INCLUDING_EVERY_PRIMARY_TEXT_FILE_AT_ARCHIVE_BUILD",
+  "submission_status": "PREPARED_LOCALLY_NOT_SUBMITTED",
+  "original_traces": "ALL_4800_WINDOWS_AND_6441_REQUESTS_RESTORED",
+  "original_binary": "EXACT_FROZEN_SHA_VERIFIED",
+  "source_rebuild": "MODIFIED_WORKING_TREE_NOT_RECOVERED",
+  "replication_zip": {
+    "name": "F10-v5-trace-verified-supplementary-replication.zip",
+    "bytes": 98750518,
+    "sha256": "3039ef77d4435908cb43801e45e427a909657c6bdda832e2595525cb7a448dbe"
+  },
+  "submission_zip": {
+    "name": "EMSE_F10_V5_FROZEN_PACKAGE_SUBMISSION_2026-09-27.zip",
+    "bytes": 111220933,
+    "sha256": "20db554285fdcb58ae255c9cef6dfee19290d97348edebdd7939fd9adcdcd165"
+  },
+  "portable_reproduction": {
+    "status": "PASS",
+    "supplementary_zip_sha256": "3039ef77d4435908cb43801e45e427a909657c6bdda832e2595525cb7a448dbe",
+    "all_zip_sha_inventory_matches": true,
+    "all_primary_file_sha_matches": true,
+    "primary_records": 4800,
+    "provider_requests": 6441,
+    "model_calls": 0,
+    "tested_platform": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+    "steps": [
+      {
+        "script": "unpack_primary.py",
+        "status": "PASS",
+        "elapsed_seconds": 13.553,
+        "model_calls": 0
+      },
+      {
+        "script": "reproduce_selection.py",
+        "status": "PASS",
+        "elapsed_seconds": 0.372,
+        "model_calls": 0
+      },
+      {
+        "script": "reproduce_offline.py",
+        "status": "PASS",
+        "elapsed_seconds": 14.903,
+        "model_calls": 0
+      },
+      {
+        "script": "audit_primary_traces.py",
+        "status": "PASS",
+        "elapsed_seconds": 2.23,
+        "model_calls": 0
+      },
+      {
+        "script": "reproduce_primary.py",
+        "status": "PASS",
+        "elapsed_seconds": 14.784,
+        "model_calls": 0
+      }
+    ],
+    "reproduced_audit_and_statistics_byte_identical_to_included_outputs": true,
+    "derived_output_sha256": {
+      "primary-audit/primary-audit-summary.json": "06bf26806741d0fd73c0e6579f92b5543b44917b681dd5222f8cdcb302d118eb",
+      "primary-audit/frozen-observed-schemas.json": "410517184f18a42af0c01e8b3fc539b4d9df0c32dce17cfcfda4fab186c44fb5",
+      "primary-audit/trial-measurements.csv": "e1efa7d330fe5c2451d8114d516e48cf89463d30acdc2e1f6e72980c468ad907",
+      "primary-reproduced/primary-reproduced-statistics.json": "b3ff226afa51ef6afe7d632afaf87a8ea5646645ba6232d82a6eba35d9ddb995"
+    }
+  }
+}
