@@ -1,0 +1,131 @@
+{
+  "all_4800_raw_outcomes_and_all_frozen_statistics_match": true,
+  "input": "Original result.json for every assigned window; immutable frozen estimators",
+  "model_calls": 0,
+  "models": {
+    "deepseek-v4.1-flash": {
+      "integrity_failures": 0,
+      "provider_requests": 1392,
+      "quality_loss": -0.015,
+      "saving": 0.21335137254124983,
+      "source_cluster_sensitivity": {
+        "quality_loss_95pct": [
+          -0.029468445116463262,
+          -0.0011091753774680605
+        ],
+        "quality_loss_upper_multiplicity_adjusted": 0.0011996753819554715,
+        "saving_95pct": [
+          0.18698284634460632,
+          0.23756493713228624
+        ],
+        "saving_lower_multiplicity_adjusted": 0.18289106203936883
+      },
+      "status": "CONFIRMATION_PASS",
+      "task_bootstrap": {
+        "quality_loss_95pct": [
+          -0.030000000000000002,
+          0.0
+        ],
+        "quality_loss_upper_multiplicity_adjusted": 0.0016666666666666668,
+        "saving_95pct": [
+          0.19346411181937623,
+          0.23332564962372682
+        ],
+        "saving_lower_multiplicity_adjusted": 0.18984737368286353
+      }
+    },
+    "glm-5.3-flash": {
+      "integrity_failures": 2,
+      "provider_requests": 1446,
+      "quality_loss": -0.016666666666666666,
+      "saving": 0.27996042414620925,
+      "source_cluster_sensitivity": {
+        "quality_loss_95pct": [
+          -0.03294119514828221,
+          -0.001460688974535678
+        ],
+        "quality_loss_upper_multiplicity_adjusted": 0.0014287863741686976,
+        "saving_95pct": [
+          0.232660930861424,
+          0.32648067557242916
+        ],
+        "saving_lower_multiplicity_adjusted": 0.22499940457231943
+      },
+      "status": "CONFIRMATION_NOT_ESTABLISHED",
+      "task_bootstrap": {
+        "quality_loss_95pct": [
+          -0.034999999999999996,
+          0.0
+        ],
+        "quality_loss_upper_multiplicity_adjusted": 0.0016666666666666672,
+        "saving_95pct": [
+          0.23003768494814655,
+          0.32584743288742
+        ],
+        "saving_lower_multiplicity_adjusted": 0.223052019139815
+      }
+    },
+    "gpt-oss-120b": {
+      "integrity_failures": 1,
+      "provider_requests": 2055,
+      "quality_loss": -0.06833333333333333,
+      "saving": 0.3870867729628331,
+      "source_cluster_sensitivity": {
+        "quality_loss_95pct": [
+          -0.09282449998643111,
+          -0.04394469676729895
+        ],
+        "quality_loss_upper_multiplicity_adjusted": -0.040688081446375285,
+        "saving_95pct": [
+          0.34638289255299687,
+          0.4249553375495756
+        ],
+        "saving_lower_multiplicity_adjusted": 0.340840963336241
+      },
+      "status": "CONFIRMATION_NOT_ESTABLISHED",
+      "task_bootstrap": {
+        "quality_loss_95pct": [
+          -0.09499999999999999,
+          -0.041666666666666664
+        ],
+        "quality_loss_upper_multiplicity_adjusted": -0.04,
+        "saving_95pct": [
+          0.3479792427823926,
+          0.4242384954975762
+        ],
+        "saving_lower_multiplicity_adjusted": 0.3424260500323324
+      }
+    },
+    "qwen3.6-fp8-noreason": {
+      "integrity_failures": 0,
+      "provider_requests": 1548,
+      "quality_loss": -0.045,
+      "saving": 0.25760815923671654,
+      "source_cluster_sensitivity": {
+        "quality_loss_95pct": [
+          -0.06816390226502586,
+          -0.02201331873745667
+        ],
+        "quality_loss_upper_multiplicity_adjusted": -0.0183415327905728,
+        "saving_95pct": [
+          0.22829867083121208,
+          0.28427864325716123
+        ],
+        "saving_lower_multiplicity_adjusted": 0.22391310598354777
+      },
+      "status": "CONFIRMATION_PASS",
+      "task_bootstrap": {
+        "quality_loss_95pct": [
+          -0.06999999999999999,
+          -0.02
+        ],
+        "quality_loss_upper_multiplicity_adjusted": -0.016666666666666666,
+        "saving_95pct": [
+          0.23189813985515226,
+          0.2824583327418186
+        ],
+        "saving_lower_multiplicity_adjusted": 0.227717916603461
+      }
+    }
+  }
+}
