@@ -2,7 +2,7 @@
 
 This snapshot supports the manuscript Source Conditioned Completion Contracts in an LLM Agent Harness by Petr A. Piatkov. It contains the original evidence and exact executable for the completed campaign; no new model outcomes were collected to prepare it.
 
-Repository: https://github.com/pyatkovpetr/emse (private). Snapshot: f10-v5-artifact-r1. Study: F10-EMSE-CLEAN-V5-2026-09-25. The full Orion harness source remains closed. Experimental code, exact Linux binary and records are included; an executable release does not assert open-source status.
+Repository: https://github.com/pyatkovpetr/emse (publicly readable). Frozen snapshot: `f10-v5-artifact-r1`. Study: F10-EMSE-CLEAN-V5-2026-09-25. The repository became public after the snapshot was prepared; the frozen tag still records the original files and may describe its earlier private access. The full Orion harness source remains closed. Experimental code, the exact Linux binary, and records are included; publishing an executable does not assert open-source status or a reproducible build of the modified harness.
 
 ## Contents
 
@@ -38,4 +38,4 @@ The original live launch scripts retain server paths and credential references a
 
 Qwen and DeepSeek pass their original model-specific cost/quality/integrity gates, with 25.76% and 21.34% recorded token savings. GLM and GPT-OSS remain reported with confirmation not established because of missing failed-call usage. All four lanes and all assigned tasks remain. Additional timings, token components, retries, native terminal recovery and residual QA guard stalls are descriptive audits.
 
-The GitHub release attaches the supplementary replication ZIP and full submission packet. Primary traces also reside in replication/primary-traces.tar.gz. The frozen tag must not be reassigned; revisions receive a new tag and retain the original campaign evidence.
+The GitHub release attaches the supplementary replication ZIP and the submission packet prepared with this snapshot. Primary traces also reside in `replication/primary-traces.tar.gz`. The later editorial technical corrections to the manuscript were submitted to EMSE separately and are not part of the frozen tag. The frozen tag must not be reassigned; revisions receive a new tag and retain the original campaign evidence.
